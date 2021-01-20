@@ -56,6 +56,10 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 gem 'devise'
 gem 'bulma-rails'
 gem 'sidekiq'
+gem 'carrierwave'
+gem 'mini_magick'
+gem 'stripe'
+gem 'trix'
 group :development, :test do
   gem 'better_errors'
   gem 'guard'
