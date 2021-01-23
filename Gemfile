@@ -6,7 +6,7 @@ ruby '2.7.0'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 6.0.3', '>= 6.0.3.4'
 # Use sqlite3 as the database for Active Record
-gem 'sqlite3', '~> 1.4'
+gem 'pg'
 # Use Puma as the app server
 gem 'puma', '~> 4.1'
 # Use SCSS for stylesheets
@@ -22,6 +22,9 @@ gem 'jbuilder', '~> 2.7'
 # Use Active Model has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 
+gem 'fog', '~> 1.37.0'
+gem "fog-aws"
+gem 'dotenv-rails', groups: [:development, :test]
 # Use Active Storage variant
 # gem 'image_processing', '~> 1.2'
 
@@ -53,15 +56,19 @@ end
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
-gem 'devise'
-gem 'bulma-rails'
-gem 'sidekiq'
-gem 'carrierwave'
-gem 'mini_magick'
-gem 'stripe'
-gem 'trix'
+gem 'devise', '~> 4.7', '>= 4.7.3'
+gem 'bulma-rails', '~> 0.9.1'
+gem 'sidekiq', '~> 6.1', '>= 6.1.2'
+gem 'carrierwave', '~> 2.1'
+gem 'mini_magick', '~> 4.11'
+gem 'stripe', '~> 5.29'
+gem 'trix-rails', '~> 2.3'
+gem 'simple_form'
+gem 'figaro'
+
+
 group :development, :test do
-  gem 'better_errors'
-  gem 'guard'
-  gem 'guard-livereload'
+  gem 'better_errors', '~> 2.9', '>= 2.9.1'
+  gem 'guard', '~> 2.16', '>= 2.16.2'
+  gem 'guard-livereload', '~> 2.5', '>= 2.5.2'
 end
