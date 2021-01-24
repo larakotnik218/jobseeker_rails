@@ -66,8 +66,10 @@ gem 'stripe', '~> 5.29'
 gem 'trix-rails', '~> 2.3'
 gem 'simple_form'
 gem 'figaro'
-gem 'omniauth'
 gem 'omniauth-google-oauth2'
+gem 'omniauth-oauth2'
+gem 'omniauth'
+gem 'omniauth-facebook'
 
 group :development, :test do
   gem 'better_errors', '~> 2.9', '>= 2.9.1'
