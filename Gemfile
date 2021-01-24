@@ -67,7 +67,6 @@ gem 'simple_form'
 gem 'figaro'
 
 
-
 group :development, :test do
   gem 'better_errors', '~> 2.9', '>= 2.9.1'
   gem 'guard', '~> 2.16', '>= 2.16.2'
