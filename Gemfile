@@ -25,6 +25,8 @@ gem 'jbuilder', '~> 2.7'
 gem 'fog', '~> 1.37.0'
 gem "fog-aws"
 gem 'dotenv-rails', groups: [:development, :test]
+gem 'omniauth'
+gem 'omniauth-google-oauth2'
 # Use Active Storage variant
 # gem 'image_processing', '~> 1.2'
 
