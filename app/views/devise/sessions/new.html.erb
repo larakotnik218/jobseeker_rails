@@ -25,7 +25,7 @@
 
 				  <%= f.button :submit, "Log in", class:"button is-outlined is-medium" %>
 					<div>
-					<%= link_to "Sign in with google", user_google_omniauth_authorize_path, method: :post %>
+					<%= link_to "Sign in with google", user_google_oauth2_omniauth_authorize_path, method: :post %>
 					</div>
 				<% end %>
 				<br/>
