@@ -24,6 +24,9 @@
 					</div>
 
 				  <%= f.button :submit, "Log in", class:"button is-outlined is-medium" %>
+					<div>
+					<%= link_to "Sign in with google", user_google_omniauth_authorize_path class:"button is-outlined is-medium bg-blue-500 text-white w-full block text-center" %>
+					</div>
 				<% end %>
 				<br/>
 				<%= render "devise/shared/links" %>
