@@ -65,6 +65,7 @@ gem 'stripe', '~> 5.29'
 gem 'trix-rails', '~> 2.3'
 gem 'simple_form'
 gem 'figaro'
+gem 'omniauth-google-oauth2'
 
 
 group :development, :test do
