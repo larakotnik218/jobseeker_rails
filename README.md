@@ -2,7 +2,7 @@
 
 Ruby on rails project
 
-F.
+
 
 REGISTRATION / LOGIN
 
