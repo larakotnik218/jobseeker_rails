@@ -16,7 +16,7 @@
       <%= @job.description.html_safe %>
     </div>
 
-    <%= link_to 'Apply to this job', @job.apply_url, class:"button is-rounded is-large is-fullwidth is-link" %>
+    <%= link_to 'Apply to this job', @job.apply_url, class:"button is-primary is-rounded is-large is-fullwidth" %>
 
   </div>
 
@@ -34,17 +34,17 @@
     <% end %>
     </div>
 
-    <%= link_to 'Apply to this job', @job.apply_url, class:"button is-rounded is-fullwidth is-link" %>
+    <%= link_to 'Apply to this job', @job.apply_url, class:"button is-rounded is-fullwidth  is-primary" %>
 
     <% if current_user == @job.user || current_user.try(:admin) %>
       <ul class="pv3">
         <li class="pv1 f6">Admin controls: </li>
         <li class="pv1 inline-block">
-          <%= link_to 'View', @job, class: 'button is-small is-link is-outlined' %></li>
+          <%= link_to 'View', @job, class: 'button is-primary is-small  is-outlined' %></li>
         <li class="pv1 inline-block">
-          <%= link_to 'Edit', edit_job_path(@job), class: 'button is-small is-link is-outlined' %></li>
+          <%= link_to 'Edit', edit_job_path(@job), class: 'button is-primary is-small  is-outlined' %></li>
         <li class="pv1 inline-block">
-          <%= button_to 'Delete', @job, method: :delete, data: { confirm: 'Are you sure?' }, class: 'button is-small is-link is-outlined' %></li>
+          <%= button_to 'Delete', @job, method: :delete, data: { confirm: 'Are you sure?' }, class: 'button is-primary is-small  is-outlined' %></li>
       </ul>
     <% end %>
   </div>

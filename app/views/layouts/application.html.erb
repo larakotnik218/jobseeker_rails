@@ -53,25 +53,18 @@
                 <%= link_to 'Account', edit_user_registration_path, class: "navbar-link" %>
                 <div class="navbar-dropdown is-right">
                   <%= link_to current_user.name, edit_user_registration_path, class:"navbar-item" %>
-                  <%= button_to "Log Out", destroy_user_session_path, method: :delete, class:"navbar-item button is-primary " %>
+                  <%= button_to "Log Out", destroy_user_session_path, method: :delete, class:"navbar-item button is-primary is-fullwidth " %>
                 </div>
               </div>
             <% else %>
             <p class="control">
-              <%= link_to "Sign In", new_user_session_path, class:"navbar-item button" %>
+              <%= link_to "Sign In", new_user_session_path, class:"navbar-item button is-outlined is-primary" %>
             </p>
             <p class="control">
-              <%= link_to "Sign up", new_user_registration_path, class:"navbar-item button"%>
+              <%= link_to "Sign up", new_user_registration_path, class:"navbar-item button is-outlined is-primary"%>
             </p>
 
-            <p class="control">
-              <%= link_to(user_google_oauth2_omniauth_authorize_path, class: "btn btn-social btn-google border mr-1") do %>
-                          <i class="fa fa-google fa-fw"></i> Sign in with Google
-                      <% end %>
-            <%= link_to(user_facebook_omniauth_authorize_path, class: "btn btn-social btn-facebook border ml-1") do %>
-                        <i class="fa fa-facebook fa-fw"></i> Sign in with Facebook
-                    <% end %>
-            </p>
+
             <% end %>
 
           </div>
