@@ -1,5 +1,3 @@
-<% if user_signed_in? %>
-    <% if current_user.email == 'temp@lali.si' %>
       <section class="section">
         <div class="container">
           <div class="columns">
@@ -10,9 +8,3 @@
           </div>
         </div>
       </section>
-<% else %>
-    <%= controller.redirect_to root_path, notice: "Preden dodajanjem objave dopolnite podatke!" %>
-<% end %>
-<% else %>
-
-<% end %>
