@@ -1,24 +1,28 @@
-# README
+# Job Board 
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Ruby on rails project
 
-Things you may want to cover:
+F.
 
-* Ruby version
+REGISTRATION / LOGIN
 
-* System dependencies
+It allows registration and login and login with Facebook or Google.
 
-* Configuration
+PROFILE EDITING
 
-* Database creation
+A user who is not logged in with Google or Facebook can edit their profile.
 
-* Database initialization
+ADDING JOBS
 
-* How to run the test suite
+Any user who is logged in can add a new job. He writes the job name, apply url, job type(full-time,part-time,contract, freelance), location, description, company name, company website and logo.
 
-* Services (job queues, cache servers, search engines, etc.)
+JOB AUTHOR
+The job author can edit or delete his own jobs.
 
-* Deployment instructions
+ADMINISTRATOR
 
-* ...
+the administrator can delete or edit all jobs.
+
+PAGE
+
+The jobboard website is fully responsive. I used bootstrap.
