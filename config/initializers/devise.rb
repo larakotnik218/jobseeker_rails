@@ -310,6 +310,7 @@ Devise.setup do |config|
   # config.sign_in_after_change_password = true
   #config.omniauth_path_prefix = "/users/auth"
   require "omniauth-google-oauth2"
+  config.omniauth :github, ENV["GITHUB_ID"], ENV["GITHUB_SECRET"]
   config.omniauth :facebook, ENV["FACEBOOK_APP_ID"], ENV["FACEBOOK_APP_SECRET"]
   config.omniauth :google_oauth2, ENV["GOOGLE_CLIENT_ID"], ENV["GOOGLE_CLIENT_SECRET"], scope: 'userinfo.email,userinfo.profile', skip_jwt: true
 end

@@ -70,6 +70,7 @@ gem 'omniauth-google-oauth2'
 gem 'omniauth-oauth2'
 gem 'omniauth', '~> 1.9.1'
 gem 'omniauth-facebook'
+gem 'omniauth-github'
 
 group :development, :test do
   gem 'better_errors', '~> 2.9', '>= 2.9.1'

@@ -1,10 +1,18 @@
-<section class="section">
-  <div class="container">
-    <div class="columns">
-      <div class="column is-8 is-offset-2">
-        <h1 class="title is-3">Post new Job</h1>
-        <%= render 'form', job: @job %>
-      </div>
-    </div>
-  </div>
-</section>
+<% if user_signed_in? %>
+    <% if current_user.email == 'temp@lali.si' %>
+      <section class="section">
+        <div class="container">
+          <div class="columns">
+            <div class="column is-8 is-offset-2">
+              <h1 class="title is-3">Post new Job</h1>
+              <%= render 'form', job: @job %>
+            </div>
+          </div>
+        </div>
+      </section>
+<% else %>
+    <%= controller.redirect_to root_path, notice: "Preden dodajanjem objave dopolnite podatke!" %>
+<% end %>
+<% else %>
+
+<% end %>
